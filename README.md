@@ -2,7 +2,7 @@
 가위바위보 게임
 # Frontend Mentor - Rock, Paper, Scissors
 
-![Design preview for the Rock, Paper, Scissors coding challenge](../rock-paper-scissors-master 0.1/design/desktop-preview.jpg)
+![Design preview for the Rock, Paper, Scissors coding challenge](/rock-paper-scissors-master 0.1/design/desktop-preview.jpg)
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
