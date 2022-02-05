@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palyAgainPage</title>
+    <link rel="stylesheet" href="./common.css">
+</head>
+
+<body>
+    <div id="popup">
+        <div id="modal">
+            <div id="top">
+                <span>RULES</span>
+                <img id="close" src="./images/icon-close.svg" alt="">
+            </div>
+            <img src="./images/image-rules.svg" alt="">
+
+        </div>
+    </div>
+    <div class="container">
+        <!--  점수 판 -->
+        <div class="scoreboard">
+            <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
+            <div class="score">
+                <p id="score_text">SCORE</p>
+                <span id="score_num">0</span>
+            </div>
+        </div>
+        <!-- 가위 바위 보 선택  컨텐츠 박스-->
+        <div id="contents">
+            <img id="triangle" src="./images/bg-triangle.svg" alt="">
+
+            <div id="paper" name="1" onclick="pagemove() " id="pagemove">
+                <img src="./images/icon-paper.svg" alt="">
+            </div>
+            <div id="scisors" name="2" onclick="pagemove() " id="pagemove">
+                <img src="./images/icon-scissors.svg" alt="">
+            </div>
+            <div id="rock" name="3" onclick="pagemove() " id="pagemove">
+                <img src="./images/icon-rock.svg" alt="">
+            </div>
+        </div>
+
+        <div id="playgame">
+            <div id="my_prcked">
+                <p>YOU PICKED</p>
+                <div id="my"></div>
+            </div>
+            <div id="scoretext">
+                <h1 id="result"></h1>
+                <a href="./playAgainPage.html"> <input type="button" value="PLAY AGAIN" id="playAgain_btn"></a>
+            </div>
+
+            <div id="randomPicked">
+                <p>THE HOUSE PICKED</p>
+                <div id="random"></div>
+            </div>
+
+        </div>
+
+        <!-- RULES 팝업창-->
+        <input type="button" value="RULES" id="rules" onclick=" popup()">
+
+        <div class="waves" style="display: none;"></div>
+    </div>
+    </div>
+    <div class="rock_scisors_paper_displayNone">
+        <div id="paper_random">
+            <img src="./images/icon-paper.svg" alt="">
+        </div>
+        <div id="scisors_random">
+            <img src="./images/icon-scissors.svg" alt="">
+        </div>
+        <div id="rock_random">
+            <img src="./images/icon-rock.svg" alt="">
+        </div>
+
+    </div>
+
+
+    <div id="paper_randomhose">
+        <img src="./images/icon-paper.svg" alt="">
+    </div>
+    <div id="scisors_randomhose">
+        <img src="./images/icon-scissors.svg" alt="">
+    </div>
+    <div id="rock_randomhose">
+        <img src="./images/icon-rock.svg" alt="">
+    </div>
+</body>
+<script src="./common.js"></script>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    body {
+        background-color: red;
+
+    }
+
+    .waves {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.4);
+    }
+
+    .waves:before,
+    .waves:after {
+        content: "";
+        position: absolute;
+        background: rgb(255, 251, 14);
+        margin-left: -12px;
+        margin-top: -12px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        -webkit-animation: wave 3s infinite linear;
+        animation: wave 3s infinite linear;
+    }
+
+    .waves:after {
+        opacity: 0;
+        -webkit-animation: wave 3s 1.5s infinite linear;
+        animation: wave 3s 1.5s infinite linear;
+    }
+
+    @-webkit-keyframes wave {
+        0% {
+            transform: scale(0);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(3.5);
+            opacity: 0;
+        }
+    }
+
+    @keyframes wave {
+        0% {
+            transform: scale(0);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(3.5);
+            opacity: 0;
+        }
+    }
+</style>
+
+<body>
+    <div class="outline">
+        <div class="waves"></div>
+    </div>
+</body>
+
+</html>
